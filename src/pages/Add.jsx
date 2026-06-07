@@ -51,7 +51,6 @@ const Add = ({token}) => {
           {
             headers: {
               token: token,
-              "Content-Type": "multipart/form-data"
             }
           }
         );
