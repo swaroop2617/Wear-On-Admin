@@ -44,8 +44,7 @@ const Dashboard = () => {
 
     const fetchCategoryData = async () => {
       try {
-        const data = await getCategoryStats();
-        const res = await axios.get("http://localhost:4000/api/dashboard/category");
+        const res = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/dashboard/category`);
         setCategoryData(res.data);
       } catch (err) {
         console.error(err);
@@ -91,7 +90,7 @@ const Dashboard = () => {
           <div className="bg-gray-50 p-4 rounded-lg shadow-sm">
             <p className="text-gray-500">Avg Order Value</p>
             <h2 className="text-xl font-semibold">
-              ₹{stats.avgOrderValue?.toFixed(2)}
+              ₹{stats.avgOrderValue ? stats.avgOrderValue.toFixed(2) : 0}
             </h2>
           </div>
 
@@ -112,7 +111,7 @@ const Dashboard = () => {
 
         {/* CATEGORY ANALYTICS */}
         <div className="mb-8">
-          <CategoryChart />
+          <CategoryChart data={categoryData} />
         </div>
 
         {/* TOP PRODUCTS */}
