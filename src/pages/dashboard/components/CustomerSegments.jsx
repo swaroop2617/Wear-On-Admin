@@ -8,7 +8,7 @@ const CustomerSegments = () => {
     const fetchData = async () => {
       try {
         const res = await axios.get(
-          "http://localhost:4000/api/dashboard/customer-segments"
+          `${import.meta.env.VITE_BACKEND_URL}/api/dashboard/customer-segments`
         );
         setData(res.data);
       } catch (err) {
