@@ -8,7 +8,7 @@ const PaymentChart = () => {
     const fetchPayments = async () => {
       try {
         const res = await axios.get(
-          "http://localhost:4000/api/dashboard/payment-stats"
+          `${import.meta.env.VITE_BACKEND_URL}/api/dashboard/payment-stats`
         );
         setData(res.data);
       } catch (err) {
