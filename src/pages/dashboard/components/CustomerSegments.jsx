@@ -56,7 +56,7 @@ const CustomerSegments = () => {
         </p>
 
         <p className="text-gray-500 text-xs">
-          Contribution: {stats.contribution}%
+          Contribution: {stats.revenuePercent}%
         </p>
 
         <p className="text-gray-500 text-xs">
