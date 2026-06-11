@@ -1,6 +1,6 @@
 # Admin Dashboard for E-commerce Application
 
-This is the admin frontend of my e-commerce project built using React and Vite. It allows admins to manage products and view basic customer analytics through a simple and responsive interface.
+This is the admin dashboard of my e-commerce project built using React and Vite. It provides a simple interface for managing products, orders, and viewing customer insights.
 
 Live Demo: http://wear-on-admin.vercel.app
 
@@ -13,11 +13,12 @@ Live Demo: http://wear-on-admin.vercel.app
 
 ## Features
 
-* Manage product data (add/view)
-* View customer segmentation insights
-* Responsive UI design
+* Dashboard with customer segmentation and analytics
+* Add new products with image upload support
+* View and manage product list
+* Manage customer orders
+* Clean and responsive admin UI
 * Integration with backend APIs
-* Fast development using Vite
 
 ## Installation and Setup
 
